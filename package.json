@@ -1,0 +1,50 @@
+{
+	"name": "@je-es/syntax",
+	"version": "0.0.1",
+	"description": "Unified wrapper that streamlines syntax creation with integrated lexer-parser coordination, LSP support, and enhanced linting capabilities.",
+	"keywords": [
+		"je-es",
+		"syntax",
+		"parser",
+		"lint",
+		"tool"
+	],
+	"license": "MIT",
+	"main": "./dist/syntax.js",
+	"module": "./dist/syntax.mjs",
+	"types": "./dist/syntax.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"test": "tsup && jest",
+		"build": "tsup",
+		"app": "tsup && node ./dist/syntax.js"
+	},
+	"author": {
+		"name": "Maysara Elshewehy",
+		"email": "maysara.elshewehy@gmail.com",
+		"url": "https://github.com/maysara-elshewehy"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/je-es/syntax.git"
+	},
+	"bugs": {
+		"url": "https://github.com/je-es/syntax/issues"
+	},
+	"homepage": "https://github.com/je-es/syntax#readme",
+	"devDependencies": {
+		"@types/jest": "^29.5.12",
+		"@types/node": "^20.12.7",
+		"jest": "^29.7.0",
+		"ts-jest": "^29.1.2",
+		"ts-node": "^10.9.2",
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.5"
+	},
+	"dependencies": {
+		"@je-es/lexer": "^0.0.8",
+		"@je-es/parser": "^0.0.3"
+	}
+}
