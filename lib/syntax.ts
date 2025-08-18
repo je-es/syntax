@@ -2,8 +2,7 @@
 //             with integrated lexer-parser coordination, LSP support,
 //             and enhanced linting capabilities.
 //
-// repo   : https://github.com/kemet-tools/syntax
-// docs   : https://kemet-tools.github.io/syntax
+// repo   : https://github.com/je-es/syntax
 // author : https://github.com/maysara-elshewehy
 //
 // Developed with ❤️ by Maysara.
