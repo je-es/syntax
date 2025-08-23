@@ -46,14 +46,12 @@ var syntax_exports = {};
 __export(syntax_exports, {
   Syntax: () => Syntax,
   create: () => create,
-  lexer: () => lexer2,
-  parser: () => parser2
+  lexer: () => lexer,
+  parser: () => parser
 });
 module.exports = __toCommonJS(syntax_exports);
 var lexer = __toESM(require("@je-es/lexer"));
 var parser = __toESM(require("@je-es/parser"));
-var lexer2 = __toESM(require("@je-es/lexer"));
-var parser2 = __toESM(require("@je-es/parser"));
 var Syntax = class _Syntax {
   constructor(config) {
     this.config = config;

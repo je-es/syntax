@@ -18,8 +18,6 @@ var __spreadValues = (a, b) => {
 // lib/syntax.ts
 import * as lexer from "@je-es/lexer";
 import * as parser from "@je-es/parser";
-import * as lexer2 from "@je-es/lexer";
-import * as parser2 from "@je-es/parser";
 var Syntax = class _Syntax {
   constructor(config) {
     this.config = config;
@@ -71,7 +69,7 @@ function create(config) {
 export {
   Syntax,
   create,
-  lexer2 as lexer,
-  parser2 as parser
+  lexer,
+  parser
 };
 //# sourceMappingURL=syntax.mjs.map

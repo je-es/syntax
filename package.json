@@ -1,6 +1,6 @@
 {
 	"name": "@je-es/syntax",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Unified wrapper that streamlines syntax creation with integrated lexer-parser coordination, LSP support, and enhanced linting capabilities.",
 	"keywords": [
 		"je-es",
@@ -44,7 +44,7 @@
 		"typescript": "^5.4.5"
 	},
 	"dependencies": {
-		"@je-es/lexer": "^0.0.8",
-		"@je-es/parser": "^0.0.4"
+		"@je-es/lexer": "^0.0.9",
+		"@je-es/parser": "^0.0.5"
 	}
 }

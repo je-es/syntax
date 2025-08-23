@@ -139,6 +139,8 @@ const result = mySyntax.parse('some code');
   - ##### @je-es/syntax
       > Unified wrapper that streamlines syntax creation with integrated lexer-parser coordination, LSP support, and enhanced linting capabilities.
 
+  - ##### [@je-es/program](https://github.com/je-es/program)
+      > A high-performance, type-safe program representation library with advanced semantic analysis for programming languages.
 
 <br>
 <div align="center">
