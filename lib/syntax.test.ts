@@ -14,7 +14,7 @@
 // ╔════════════════════════════════════════ TEST ════════════════════════════════════════╗
 
     describe("Syntax", () => {
-        it("Moved to https://github.com/je-es/program, (syntax is just a wrapper)", () => {
+        it("[TODO]", () => {
             expect(true).toBe(true);
         });
     });
