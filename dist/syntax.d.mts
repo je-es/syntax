@@ -7,8 +7,8 @@ interface SyntaxConfig {
     name: string;
     version: string;
     lexer: lexer.Rules;
-    parser: parser.Rule[];
-    settings: parser.ParserSettings;
+    parser: parser.Types.Rule[];
+    settings: parser.Types.ParserSettings;
 }
 /**
  * Represents a syntax with its lexer, parser, and settings.
@@ -24,14 +24,14 @@ declare class Syntax {
      * @param input - The string to parse.
      * @returns The parse result, including the syntax tree and any errors.
      */
-    parse(input: string): parser.ParseResult;
+    parse(input: string): parser.Types.ParseResult;
     /**
      * Similar to parse, but returns only the errors in the parse result.
      *
      * @param input - The string to lint.
      * @returns An array of errors found in the input string.
      */
-    lint(input: string): parser.ParseError[];
+    lint(input: string): parser.Types.ParseError[];
     /**
      * Create a new Syntax object with the given start rule and debug level,
      * using the current syntax's configuration.
@@ -41,7 +41,7 @@ declare class Syntax {
      *                    from the current syntax's settings will be used.
      * @returns A new Syntax object with the given start rule and debug level.
     */
-    from(ruleName: string, debug?: parser.DebugLevel | null): Syntax;
+    from(ruleName: string, debug?: parser.Types.DebugLevel | null): Syntax;
 }
 /**
  * Create a new syntax object with the given configuration.
