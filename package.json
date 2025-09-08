@@ -2,13 +2,7 @@
 	"name": "@je-es/syntax",
 	"version": "0.0.9",
 	"description": "A wrapper for @je-es/lexer and @je-es/parser..!",
-	"keywords": [
-		"je-es",
-		"syntax",
-		"parser",
-		"lint",
-		"tool"
-	],
+	"keywords": [ "je-es", "syntax", "tool", "convert", "text", "ast" ],
 	"license": "MIT",
 	"main": "./dist/syntax.js",
 	"module": "./dist/syntax.mjs",
