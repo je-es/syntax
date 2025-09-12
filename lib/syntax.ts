@@ -1,4 +1,6 @@
-// syntax.ts — A wrapper for @je-es/lexer and @je-es/parser..!
+// syntax.ts — Unified wrapper that streamlines syntax creation
+//             with integrated lexer-parser coordination, LSP support,
+//             and enhanced linting capabilities.
 //
 // repo   : https://github.com/je-es/syntax
 // author : https://github.com/maysara-elshewehy

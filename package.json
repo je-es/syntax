@@ -1,6 +1,6 @@
 {
 	"name": "@je-es/syntax",
-	"version": "0.0.9",
+	"version": "0.1.0",
 	"description": "A wrapper for @je-es/lexer and @je-es/parser..!",
 	"keywords": [ "je-es", "syntax", "tool", "convert", "text", "ast" ],
 	"license": "MIT",
@@ -41,7 +41,7 @@
 		"typescript-eslint": "^8.42.0"
 	},
 	"dependencies": {
-		"@je-es/lexer": "^0.1.3",
+		"@je-es/lexer": "^0.1.4",
 		"@je-es/parser": "^0.0.9"
 	}
 }
