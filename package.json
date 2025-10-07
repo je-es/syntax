@@ -41,7 +41,6 @@
 		"typescript-eslint": "^8.42.0"
 	},
 	"dependencies": {
-		"@je-es/lexer": "^0.1.4",
-		"@je-es/parser": "^0.0.9"
+		"@je-es/lexer": "^0.1.4"
 	}
 }

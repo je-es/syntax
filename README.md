@@ -29,7 +29,7 @@
 
 ## [3] [`@je-es/syntax`](https://github.com/je-es/syntax) 🚀
 
-> _For complete context, please refer to [these documents](https://github.com/kemet-lang/.github/blob/main/profile/README.md) first._
+> _To understand the full context, please refer to [these documents](https://github.com/kemet-lang/.github/blob/main/profile/README.md)._
 
 ```bash
 # install using npm
@@ -85,9 +85,15 @@ const result = syntax.parse(text);
 ---
 
 
-> #### 1. [`@je-es/lexer`](https://github.com/je-es/lexer)
+> #### 1. [@je-es/lexer](https://github.com/je-es/lexer)
 
-> #### 2. [`@je-es/parser`](https://github.com/je-es/parser)
+> #### 2. [@je-es/parser](https://github.com/je-es/parser)
+
+> #### 3. [`@je-es/syntax`](https://github.com/je-es/syntax)
+
+> #### 4. [@je-es/ast](https://github.com/je-es/ast)
+
+> #### 5. [@je-es/ast-analyzer](https://github.com/je-es/ast-analyzer)
 
 <div align="center">
     <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/>
