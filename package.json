@@ -2,7 +2,14 @@
 	"name": "@je-es/syntax",
 	"version": "0.1.1",
 	"description": "A wrapper for @je-es/lexer and @je-es/parser..!",
-	"keywords": [ "je-es", "syntax", "tool", "convert", "text", "ast" ],
+	"keywords": [
+		"je-es",
+		"syntax",
+		"tool",
+		"convert",
+		"text",
+		"ast"
+	],
 	"license": "MIT",
 	"main": "./dist/syntax.js",
 	"module": "./dist/syntax.mjs",
@@ -29,6 +36,8 @@
 	},
 	"homepage": "https://github.com/je-es/syntax#readme",
 	"devDependencies": {
+		"@eslint/js": "^9.34.0",
+		"@stylistic/eslint-plugin": "^5.3.1",
 		"@types/jest": "^29.5.12",
 		"@types/node": "^20.12.7",
 		"jest": "^29.7.0",
@@ -36,11 +45,10 @@
 		"ts-node": "^10.9.2",
 		"tsup": "^8.0.2",
 		"typescript": "^5.4.5",
-		"@eslint/js": "^9.34.0",
-		"@stylistic/eslint-plugin": "^5.3.1",
 		"typescript-eslint": "^8.42.0"
 	},
 	"dependencies": {
-		"@je-es/lexer": "^0.1.4"
+		"@je-es/lexer": "^0.1.4",
+		"@je-es/parser": "^0.1.0"
 	}
 }
