@@ -1,7 +1,7 @@
 {
 	"name": "@je-es/syntax",
 	"version": "0.1.1",
-	"description": "A wrapper for @je-es/lexer and @je-es/parser..!",
+	"description": "A wrapper for @je-es/lexer and @je-es/parser.",
 	"keywords": [
 		"je-es",
 		"syntax",
