@@ -122,7 +122,7 @@ const result = syntax.parse(text);
 <br>
 <div align="center">
     <a href="https://github.com/maysara-elshewehy">
-        <img src="https://img.shields.io/badge/Made with ❤️ by-Maysara-orange"/>
+        <img src="https://img.shields.io/badge/Made with ❤️ by-Maysara-blue"/>
     </a>
 </div>
 
