@@ -1,6 +1,6 @@
 {
 	"name": "@je-es/syntax",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "A wrapper for @je-es/lexer and @je-es/parser.",
 	"keywords": [
 		"je-es",
@@ -49,6 +49,6 @@
 	},
 	"dependencies": {
 		"@je-es/lexer": "^0.1.4",
-		"@je-es/parser": "^0.1.0"
+		"@je-es/parser": "^0.1.1"
 	}
 }
