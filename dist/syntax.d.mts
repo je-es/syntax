@@ -39,8 +39,13 @@ interface Builtin {
     mode: 'type' | 'function';
     type: AST.TypeNode | null;
     callable?: boolean;
+    default_args?: DefaultArg[];
     metadata?: any;
 }
+type DefaultArg = {
+    ind: number;
+    value: AST.ExprNode;
+};
 interface SyntaxConfig {
     name: string;
     version: string;
@@ -67,4 +72,4 @@ declare class Syntax {
 }
 declare function create(config: SyntaxConfig): Syntax;
 
-export { type Builtin, type BuiltinConfig, type KeywordDoc, type LSPConfig, type LSPKeywords, Syntax, type SyntaxConfig, create };
+export { type Builtin, type BuiltinConfig, type DefaultArg, type KeywordDoc, type LSPConfig, type LSPKeywords, Syntax, type SyntaxConfig, create };

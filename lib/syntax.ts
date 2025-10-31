@@ -59,8 +59,11 @@
         mode                : 'type' | 'function';
         type                : AST.TypeNode | null;
         callable?           : boolean;
+        default_args?       : DefaultArg[];
         metadata?           : any;
     }
+
+    export type DefaultArg = { ind: number, value: AST.ExprNode };
 
     export interface SyntaxConfig {
         name                : string;

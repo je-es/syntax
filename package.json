@@ -1,6 +1,6 @@
 {
 	"name": "@je-es/syntax",
-	"version": "0.1.9",
+	"version": "0.2.0",
 	"description": "Unified wrapper that streamlines syntax creation with integrated lexer-parser coordination, LSP support, and enhanced linting capabilities.",
 	"keywords": [
 		"je-es",
