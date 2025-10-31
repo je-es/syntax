@@ -13,6 +13,7 @@
 
     import * as lexer  from '@je-es/lexer';
     import * as parser from '@je-es/parser';
+    import * as AST from '@je-es/ast';
 
     export * as lexer  from '@je-es/lexer';
     export * as parser from '@je-es/parser';
@@ -47,6 +48,20 @@
         fileExtension?      : string;
     }
 
+    export interface BuiltinConfig {
+        types               : Builtin[]; // as type
+        functions           : Builtin[]; // as function
+    }
+
+    export interface Builtin {
+        name                : string;
+        desc                : string;
+        mode                : 'type' | 'function';
+        type                : AST.TypeNode | null;
+        callable?           : boolean;
+        metadata?           : any;
+    }
+
     export interface SyntaxConfig {
         name                : string;
         version             : string;
@@ -54,6 +69,7 @@
         parser              : parser.Rule[];
         settings            : parser.ParserSettings;
         lsp?                : LSPConfig;
+        builtin             : BuiltinConfig;
     }
 
 // ╚══════════════════════════════════════════════════════════════════════════════════════╝
@@ -62,9 +78,6 @@
 
 // ╔════════════════════════════════════════ CORE ════════════════════════════════════════╗
 
-    /**
-     * Represents a syntax with its lexer, parser, and settings.
-    */
     export class Syntax {
         public config       : SyntaxConfig;
         public parser       : parser.Parser;
@@ -95,61 +108,36 @@
             return new Syntax(newConfig);
         }
 
-        /**
-         * Get LSP keywords grouped by category.
-         */
         getLSPKeywords(): LSPKeywords | undefined {
             return this.lsp?.keywords;
         }
 
-        /**
-         * Get all keywords as a flat array.
-         */
         getAllKeywords(): string[] {
             if (!this.lsp?.keywords) return [];
             const { declarations, types, controlFlow, modifiers, operators, literals } = this.lsp.keywords;
             return [...declarations, ...types, ...controlFlow, ...modifiers, ...operators, ...literals];
         }
 
-        /**
-         * Get documentation for a specific keyword.
-         */
         getKeywordDoc(keyword: string): KeywordDoc | undefined {
             return this.lsp?.keywordDocs?.[keyword];
         }
 
-        /**
-         * Get documentation for a builtin.
-         */
         getBuiltinDoc(builtin: string): string | undefined {
             return this.lsp?.builtinDocs?.[builtin];
         }
 
-        /**
-         * Check if a string is a keyword in this syntax.
-         */
         isKeyword(str: string): boolean {
             if (!this.lsp?.keywords) return false;
             const all = this.getAllKeywords();
             return all.includes(str);
         }
 
-        /**
-         * Check if a string is a builtin in this syntax.
-         */
         isBuiltin(str: string): boolean {
             if (!this.lsp?.keywords) return false;
             return this.lsp.keywords.builtins.includes(str);
         }
     }
 
-    /**
-     * Create a new syntax object with the given configuration.
-     *
-     * @param config - The configuration object for the syntax, containing the
-     *                 lexer rules, parser rules, and parser settings.
-     * @returns A new syntax object.
-     */
     export function create(config: SyntaxConfig): Syntax {
         return new Syntax(config);
     }

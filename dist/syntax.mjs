@@ -42,48 +42,30 @@ var Syntax = class _Syntax {
     newConfig.settings.startRule = ruleName;
     return new _Syntax(newConfig);
   }
-  /**
-   * Get LSP keywords grouped by category.
-   */
   getLSPKeywords() {
     var _a;
     return (_a = this.lsp) == null ? void 0 : _a.keywords;
   }
-  /**
-   * Get all keywords as a flat array.
-   */
   getAllKeywords() {
     var _a;
     if (!((_a = this.lsp) == null ? void 0 : _a.keywords)) return [];
     const { declarations, types, controlFlow, modifiers, operators, literals } = this.lsp.keywords;
     return [...declarations, ...types, ...controlFlow, ...modifiers, ...operators, ...literals];
   }
-  /**
-   * Get documentation for a specific keyword.
-   */
   getKeywordDoc(keyword) {
     var _a, _b;
     return (_b = (_a = this.lsp) == null ? void 0 : _a.keywordDocs) == null ? void 0 : _b[keyword];
   }
-  /**
-   * Get documentation for a builtin.
-   */
   getBuiltinDoc(builtin) {
     var _a, _b;
     return (_b = (_a = this.lsp) == null ? void 0 : _a.builtinDocs) == null ? void 0 : _b[builtin];
   }
-  /**
-   * Check if a string is a keyword in this syntax.
-   */
   isKeyword(str) {
     var _a;
     if (!((_a = this.lsp) == null ? void 0 : _a.keywords)) return false;
     const all = this.getAllKeywords();
     return all.includes(str);
   }
-  /**
-   * Check if a string is a builtin in this syntax.
-   */
   isBuiltin(str) {
     var _a;
     if (!((_a = this.lsp) == null ? void 0 : _a.keywords)) return false;

@@ -2,25 +2,27 @@
 <br>
 <div align="center">
     <p>
-        <img src="./assets/img/logo.png" alt="syntax" height="50" />
+        <img src="./assets/img/logo.png" alt="syntax-Logo" style="" height="50" />
     </p>
 </div>
 
-<div align="center">
-    <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/>
-</div>
-
-<p align="center" style="font-style:italic; color:gray;">
-    <br>
-    Unified wrapper that streamlines syntax creation<br>
-    with integrated lexer-parser coordination, LSP support, and enhanced linting capabilities..!
-    <br>
-</p>
 
 <div align="center">
-    <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/>
+    <p align="center" style="font-style:italic; color:gray;">
+        Unified wrapper that streamlines syntax creation<br>
+        with integrated lexer-parser coordination, LSP support, and enhanced linting capabilities.
+        <br>
+    </p>
+    <img src="https://img.shields.io/badge/Version-0.1.9-black"/>
+    <a href="https://github.com/je-es"><img src="https://img.shields.io/badge/Part_of-@je--es-black"/></a>
+    <a href="https://github.com/kemet-lang"><img src="https://img.shields.io/badge/Built_for-@kemet--lang-black"/></a>
 </div>
-<br>
+
+
+<div align="center">
+    <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/>
+    <br>
+</div>
 
 <!--------------------------------------------------------------------------->
 
@@ -123,13 +125,22 @@
 ---
 
 > #### 1. [@je-es/lexer](https://github.com/je-es/lexer)
+
 > #### 2. [@je-es/parser](https://github.com/je-es/parser)
+
 > #### 3. [`@je-es/syntax`](https://github.com/je-es/syntax)
+
 > #### 4. [@je-es/ast](https://github.com/je-es/ast)
-> #### 5. [@kemet-lang/rules](https://github.com/kemet-lang/rules)
-> #### 6. [@je-es/ast-analyzer](https://github.com/je-es/ast-analyzer)
-> #### 7. [@je-es/project](https://github.com/je-es/project)
-> #### 8. [@je-es/lsp](https://github.com/je-es/lsp)
+
+> #### 5. [@je-es/ast-analyzer](https://github.com/je-es/ast-analyzer)
+
+> #### 6. [@je-es/project](https://github.com/je-es/project)
+
+> #### 7. [@je-es/lsp](https://github.com/je-es/lsp)
+
+> #### 8. [@je-es/codegen](https://github.com/je-es/codegen)
+
+> #### 9. [@je-es/compiler](https://github.com/je-es/compiler)
 
 <div align="center">
     <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/>
