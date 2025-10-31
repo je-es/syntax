@@ -34,13 +34,11 @@ interface BuiltinConfig {
     functions: Builtin[];
 }
 interface Builtin {
-    name: string;
-    desc: string;
+    stmt: AST.StmtNode;
     mode: 'type' | 'function';
-    type: AST.TypeNode | null;
-    callable?: boolean;
-    default_args?: DefaultArg[];
-    metadata?: any;
+    metadata?: {
+        [key: string]: any;
+    };
 }
 type DefaultArg = {
     ind: number;

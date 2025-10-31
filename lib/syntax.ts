@@ -54,13 +54,11 @@
     }
 
     export interface Builtin {
-        name                : string;
-        desc                : string;
+        stmt                : AST.StmtNode;
         mode                : 'type' | 'function';
-        type                : AST.TypeNode | null;
-        callable?           : boolean;
-        default_args?       : DefaultArg[];
-        metadata?           : any;
+        metadata?           : {
+            [key: string]: any
+        };
     }
 
     export type DefaultArg = { ind: number, value: AST.ExprNode };
