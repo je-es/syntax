@@ -2,7 +2,7 @@
 <br>
 <div align="center">
     <p>
-        <img src="./assets/img/logo.png" alt="syntax-Logo" style="" height="50" />
+        <img src="./assets/img/logo.png" alt="syntax" style="" height="50" />
     </p>
 </div>
 
@@ -13,7 +13,7 @@
         with integrated lexer-parser coordination, LSP support, and enhanced linting capabilities.
         <br>
     </p>
-    <img src="https://img.shields.io/badge/Version-0.2.1-black"/>
+    <img src="https://img.shields.io/badge/Version-0.2.2-black"/>
     <a href="https://github.com/je-es"><img src="https://img.shields.io/badge/Part_of-@je--es-black"/></a>
     <a href="https://github.com/kemet-lang"><img src="https://img.shields.io/badge/Built_for-@kemet--lang-black"/></a>
 </div>
@@ -28,11 +28,7 @@
 
 
 
-<!----------------------------------- HMM ----------------------------------->
-
-## [3] [`@je-es/syntax`](https://github.com/je-es/syntax) 🚀
-
-> _To understand the full context, please refer to [these documents](https://github.com/kemet-lang/.github/blob/main/profile/roadmap/MVP.md)._
+<!----------------------------------- --- ----------------------------------->
 
 - ### Install
 
@@ -44,7 +40,9 @@
     import * as Syntax from "@je-es/syntax";
     ```
 
-- ### Basic Usage
+    <div align="center"> <br> <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/> <br> </div>
+
+- ### Usage
 
     ```ts
     // [1] Create syntax object
@@ -122,43 +120,32 @@
         lsp.start();
         ```
 
----
+    <div align="center"> <br> <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/> <br> </div>
 
-> #### 1. [@je-es/lexer](https://github.com/je-es/lexer)
 
-> #### 2. [@je-es/parser](https://github.com/je-es/parser)
+- ### Related
 
-> #### 3. [`@je-es/syntax`](https://github.com/je-es/syntax)
+    - #### [kemet-lang (MVP)](https://github.com/kemet-lang/.github/blob/main/profile/roadmap/MVP.md)
 
-> #### 4. [@je-es/ast](https://github.com/je-es/ast)
+        > #### 1. [@je-es/lexer](https://github.com/je-es/lexer)
 
-> #### 5. [@je-es/ast-analyzer](https://github.com/je-es/ast-analyzer)
+        > #### 2. [@je-es/parser](https://github.com/je-es/parser)
 
-> #### 6. [@je-es/project](https://github.com/je-es/project)
+        > #### 3. [@je-es/ast](https://github.com/je-es/ast)
 
-> #### 7. [@je-es/lsp](https://github.com/je-es/lsp)
+        > #### 4. [`@je-es/syntax`](https://github.com/je-es/syntax)
 
-> #### 8. [@je-es/codegen](https://github.com/je-es/codegen)
+        > #### 5. [@je-es/ast-analyzer](https://github.com/je-es/ast-analyzer)
 
-> #### 9. [@je-es/compiler](https://github.com/je-es/compiler)
+        > #### 6. [@je-es/project](https://github.com/je-es/project)
 
-<div align="center">
-    <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/>
-</div>
+        > #### 7. [@je-es/lsp](https://github.com/je-es/lsp)
 
-<p align="center">
-    <b>
-        <br>
-        <i style="color: gray;">"
-        Currently I'm working on a larger lsp, so I'll skip writing documentation for now due to time constraints.
-        "</i>
-        <br>
-    </b>
-</p>
+        > #### 8. [@je-es/codegen](https://github.com/je-es/codegen)
 
-<div align="center">
-    <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/>
-</div>
+        > #### 9. [@je-es/compiler](https://github.com/je-es/compiler)
+
+
 
 <!--------------------------------------------------------------------------->
 
@@ -167,6 +154,11 @@
 <!----------------------------------- END ----------------------------------->
 
 <br>
+<div align="center">
+    <img src="./assets/img/line.png" alt="line" style="display: block; margin-top:20px;margin-bottom:20px;width:500px;"/>
+</div>
+<br>
+
 <div align="center">
     <a href="https://github.com/maysara-elshewehy">
         <img src="https://img.shields.io/badge/by-Maysara-blue"/>
