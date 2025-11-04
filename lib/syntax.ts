@@ -1,6 +1,4 @@
-// syntax.ts — Unified wrapper that streamlines syntax creation
-//             with integrated lexer-parser coordination, LSP support,
-//             and enhanced linting capabilities.
+// syntax.ts — Defines the formal grammar and syntax rules.
 //
 // repo   : https://github.com/je-es/syntax
 // author : https://github.com/maysara-elshewehy
@@ -11,12 +9,12 @@
 
 // ╔════════════════════════════════════════ PACK ════════════════════════════════════════╗
 
-    import * as lexer  from '@je-es/lexer';
-    import * as parser from '@je-es/parser';
-    import * as AST from '@je-es/ast';
+    import * as lexer   from '@je-es/lexer';
+    import * as parser  from '@je-es/parser';
+    import * as AST     from '@je-es/ast';
 
-    export * as lexer  from '@je-es/lexer';
-    export * as parser from '@je-es/parser';
+    export * as lexer   from '@je-es/lexer';
+    export * as parser  from '@je-es/parser';
 
 // ╚══════════════════════════════════════════════════════════════════════════════════════╝
 

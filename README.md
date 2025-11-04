@@ -9,11 +9,11 @@
 
 <div align="center">
     <p align="center" style="font-style:italic; color:gray;">
-        Unified wrapper that streamlines syntax creation<br>
-        with integrated lexer-parser coordination, LSP support, and enhanced linting capabilities.
+        Defines the formal grammar and syntax rules.<br>
+        Acts as the single source of truth for all language constructs and structures.
         <br>
     </p>
-    <img src="https://img.shields.io/badge/Version-0.2.2-black"/>
+    <img src="https://img.shields.io/badge/Version-0.2.3-black"/>
     <a href="https://github.com/je-es"><img src="https://img.shields.io/badge/Part_of-@je--es-black"/></a>
     <a href="https://github.com/kemet-lang"><img src="https://img.shields.io/badge/Built_for-@kemet--lang-black"/></a>
 </div>
